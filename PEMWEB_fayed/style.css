@@ -1,0 +1,299 @@
+/* Reset dan Global Styles */
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', Arial, sans-serif; 
+    background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+    width: 80%; 
+    margin: 0 auto; 
+    max-width: 1100px; 
+}
+
+/* Wrapper  */
+.wrapper {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+    position: relative;
+}
+
+/* Logo */
+.logo a {
+    font-size: 40px;
+    font-weight: bold;
+    float: left;
+    font-family: 'Courier New', Courier, monospace;
+    color: #4F75FF;
+}
+
+.logo a:hover {
+    color: #FF8881; 
+}
+
+/* Menu Navigasi */
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 80px;
+    position: sticky;
+    top: 0;
+    background-color: #686D76;
+    padding: 0 20px;
+    z-index: 1;
+    border-bottom: 1px solid #4F75FF; 
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px; 
+}
+
+nav ul li a {
+    color: white;
+    font-weight: bold;
+    padding: 0px 16px; 
+    transition: color 0.3s ease; 
+}
+
+nav ul li a:hover {
+    text-decoration: underline; 
+    color: #4F75FF; 
+}
+
+nav ul li a.active {
+    text-decoration: underline; 
+    color: #4F75FF;
+}
+
+/* Header */
+header {
+    background-color: #686D76; 
+    color: white; 
+    text-align: center; 
+}
+
+/* Main Content */
+main {
+    padding: 20px; 
+    background: white; 
+    margin: 20px; 
+    border-radius: 5px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+}
+
+/* Section */
+section {
+    margin: 20px 0;
+    padding: 20px; 
+    background: white; /* Warna latar belakang section */
+    border-radius: 5px; /* Sudut melengkung */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Bayangan */
+}
+
+/* Kolom */
+.kolom {
+    width: 50%; /* Lebar kolom */
+    margin-top: 50px; /* Margin atas */
+}
+
+.kolom .deskripsi {
+    font-size: 20px; /* Ukuran font deskripsi */
+    font-weight: bold; /* Ketebalan font */
+    font-family: 'Comic Sans MS', cursive; /* Font deskripsi */
+    color: #4F75FF; /* Warna deskripsi */
+}
+
+/* Heading */
+h1,
+h2 {
+    color: #333; /* Warna heading */
+    font-family: 'Comic Sans MS', cursive; /* Font untuk heading */
+    font-weight: 800; /* Ketebalan font */
+    font-size: 40px; /* Ukuran font untuk h1 */
+    margin-bottom: 20px; /* Margin bawah */
+    line-height: 1.2; /* Jarak antar baris */
+}
+
+#portfolio-title {
+    text-align: left; /* Rata kiri */
+    font-size: 2em; /* Ukuran font */
+    color: #4F75FF; /* Warna */
+    margin-left: 10px; /* Margin kiri */
+    display: inline-block; /* Tampilkan sebagai blok */
+}
+
+/* Paragraf */
+p {
+    font-size: 16px; /* Ukuran font */
+    line-height: 1.5; /* Jarak antar baris */
+    margin: 10px 0; /* Margin atas dan bawah */
+    padding: 10px 0; /* Padding atas dan bawah */
+}
+
+/* Gambar */
+img {
+    width: 100%; /* Lebar gambar */
+    max-width: 45%; /* Lebar maksimum */
+    height: auto; /* Tinggi gambar */
+    margin-left: 20px; /* Margin kiri */
+}
+
+/* Tombol */
+a.tbl-biru,
+a.tbl-merah {
+    border-radius: 20px; /* Sudut melengkung */
+    padding: 10px 15px; /* Padding untuk tombol */
+    font-weight: bold; /* Ketebalan font */
+    cursor: pointer; /* Tampilkan sebagai pointer */
+    display: inline-block; /* Tampilkan sebagai blok */
+}
+
+a.tbl-biru {
+    background-color: #4F75FF; /* Warna latar belakang tombol biru */
+    color: #ffffff; /* Warna teks */
+}
+
+a.tbl-biru:hover {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan saat hover */
+}
+
+a.tbl-merah {
+    background-color: #FF8881; /* Warna latar belakang tombol merah */
+    color: #ffffff; /* Warna teks */
+}
+
+a.tbl-merah:hover {
+    background-color: #4F75FF; /* Warna latar belakang tombol merah saat hover */
+    text-decoration: none; /* Menghapus garis bawah */
+}
+
+/* Footer */
+footer {
+    background-color: #333; /* Warna latar belakang footer */
+    color: white; /* Warna teks */
+    text-align: center; /* Rata tengah */
+    padding: 20px 0; /* Padding atas dan bawah */
+    margin-top: 50px; /* Margin atas */
+    border-top: 1px solid #4F75FF; /* Garis atas */
+    position: relative; /* Posisi relatif */
+    bottom: 0; /* Posisi bawah */
+    width: 100%; /* Lebar */
+}
+
+footer p {
+    font-size: 14px; /* Ukuran font */
+}
+
+/* Kelas Tengah */
+.tengah {
+    text-align: center; /* Rata tengah */
+    width: 100%; /* Lebar */
+}
+
+/* Form Kontak */
+.contact-form {
+    display: flex; /* Tampilkan sebagai flexbox */
+    justify-content: space-between; /* Rata kiri dan kanan */
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%; /* Lebar */
+    padding: 15px; /* Padding */
+    margin-bottom: 20px; /* Margin bawah */
+    background-color: transparent; /* Warna latar belakang transparan */
+    border: 1px solid white; /* Garis bawah */
+    color: rgb(7, 7, 7); /* Warna teks */
+    font-size: 16px; /* Ukuran font */
+}
+
+form textarea {
+    height: 100px; /* Tinggi textarea */
+    resize: vertical; /* Ukuran vertikal */
+}
+
+button {
+    padding: 15px 30px; /* Padding untuk tombol */
+    background-color: white; /* Warna latar belakang tombol */
+    color: #2D51D3; /* Warna teks */
+    border: none; /* Menghapus garis bawah */
+    cursor: pointer; /* Tampilkan sebagai pointer */
+    font-size: 16px; /* Ukuran font */
+    margin-top: 10px; /* Margin atas */
+}
+
+/* Footer Ikon */
+.footer {
+    display: flex; /* Tampilkan sebagai flexbox */
+    justify-content: flex-end; /* Rata kanan */
+    margin-top: 50px; /* Margin atas */
+}
+
+.footer img {
+    width: 30px; /* Lebar gambar */
+    margin-left: 10px; /* Margin kiri */
+}
+
+/* Media Queries untuk Responsif */
+@media (max-width: 768px) {
+    .kolom {
+        width: 100%; /* Lebar kolom */
+        margin-top: 20px; /* Margin atas */
+    }
+
+    img {
+        max-width: 100%; /* Lebar maksimum */
+        margin-left: 0; /* Margin kiri */
+    }
+
+    .contact-form input[type="text"],
+    .contact-form input[type="email"] {
+        width: 100%; /* Le bar */
+    }
+}
+
+@media (max-width: 600px) {
+    nav ul li {
+        float: none; /* Menghapus float */
+        margin-left: 0; /* Margin kiri */
+    }
+
+    .wrapper {
+        width: 100%; /* Lebar */
+        padding: 0 10px; /* Padding */
+    }
+}
+
+/* Tambahan untuk tata letak gambar dan deskripsi */
+.content-wrapper {
+    display: flex; /* Tampilkan sebagai flexbox */
+    flex-wrap: wrap; /* Wrap konten */
+    justify-content: space-between; /* Rata kiri dan kanan */
+    margin-bottom: 20px; /* Margin bawah */
+}
+
+.content-wrapper img {
+    width: 40%; /* Lebar gambar */
+    margin-right: 20px; /* Margin kanan */
+}
+
+.content-wrapper .description {
+    width: 55%; /* Lebar deskripsi */
+}
